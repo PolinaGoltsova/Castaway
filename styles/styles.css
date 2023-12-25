@@ -15,10 +15,320 @@
   font-display: swap;
 }
 
+*, 
+*::before,
+*::after  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
 
 body {
-    background-color: lightgrey;
+    background-color: rgba(54, 63, 70, 1);
     font-family: "DM Sans", sans-serif;
+    list-style-type: none;
+    width: 1440px;
+    min-height: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
 
   }
+
+.main-index {
+  flex-grow: 1;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+.navigation-item {
+  list-style-type: none;
+}
+
+.navigation-link {
+color: #FFF;
+font-family: DM Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+text-decoration: none;
+list-style-type: none;
+}
+
+.welcome-text-1{
+color: #FFF;
+font-family: DM Sans;
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+line-height: 88px; 
+letter-spacing: 3.2px;
+}
+
+.welcome-text-2 {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+}
+
+.welcome-text-3 {
+color: #FFF;
+font-family: DM Sans;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 88px; 
+letter-spacing: 3.2px;
+}
+
+.welcome-text-social{
+color: #FFF;
+font-family: DM Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+
+.welcome-image {
+  border-radius: 12px;
+  background-color: darkgray;
+}
+
+.welcome-icons-social {
+  list-style-type: none;
+}
+
+.latest-episode-item{
+  list-style-type: none;
+  border-radius: 32px;
+background: #000;
+width: 1300px;
+}
+
+.latest-episode-title {
+  color: #FFF;
+font-family: DM Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 79.2px; 
+letter-spacing: 2.88px;
+}
+
+.latest-episode-hashtag{
+color: #FFF;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+background-color: #191919;
+border-radius: 6px;
+display: inline-block;
+text-align: center;
+padding: 0 16px;
+}
+
+.latest-episode-number {
+  color: #118DA8;
+
+  font-family: DM Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.latest-episode-name {
+  color: #FFF;
+
+font-family: DM Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 70.4px; 
+letter-spacing: 2.56px;
+}
+
+.latest-episode-description{
+  color: rgba(255, 255, 255, 0.70);
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.author-intro{
+  color: #118DA8;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; 
+}
+
+.author-title{
+  color: #FFF;
+font-family: DM Sans;
+font-size: 65px;
+font-style: normal;
+font-weight: 400;
+line-height: 79.2px; /* 121.846% */
+letter-spacing: 2.88px;
+}
+
+.author-desc {
+  color: rgba(255, 255, 255, 0.70);
+
+font-family: DM Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px;
+}
+
+.authot-photo {
+  border-radius: 12px;
+}
+
+.subscribe-wrapper{
+  width: 1300px;
+  border-radius: 32px;
+background: #000;
+}
+
+.subscribe-title{
+  color: #118DA8;
+
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; 
+}
+
+.subscribe-text {
+  color: #FFF;
+
+font-family: DM Sans;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: 79.2px; /* 110% */
+letter-spacing: 2.88px;
+}
+
+.subscribe-name,
+.subscribe-email{
+  color: rgba(255, 255, 255, 0.70);
+
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px;
+width: 522px;
+padding-left: 19px;
+padding-top: 26px;
+padding-bottom: 27px;
+text-align: start;
+border-radius: 6px;
+border: 1px solid #191919;
+background: #191919;
+display: block;
+}
+
+.reviews-item {
+  list-style-type: none;
+  width: 423px;
+  
+  padding: 92px 60px 51px 50px;
+  border-radius: 32px;
+  background: #000;
+}
+
+.reviews-text {
+  color: #FFF;
+font-family: DM Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 43.2px; 
+}
+
+.reviews-author {
+  color: rgba(255, 255, 255, 0.70);
+
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.8px;
+}
+
+.footer-social-item{
+  list-style-type: none;
+}
+
+.footer-menu-list {
+  list-style-type: none;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  color: #FFF;
+
+font-family: DM Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
+
+.latest-episode-button {
+  border-radius: 6px;
+background: #118DA8;
+padding: 12px 15px 12px 20px;
+border-color: transparent;
+color: #FFF;
+font-family: DM Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; 
+}
+
+.subscribe-button {
+  padding: 9px 15px 10px 19px;
+  border-radius: 6px;
+background: #118DA8;
+border-color: transparent;
+color: rgba(255, 255, 255, 0.70);
+font-family: DM Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 28.8px;
+}
 
