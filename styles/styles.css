@@ -108,6 +108,17 @@ padding-bottom: 20px;
   gap: 60px;
   grid-template-columns: 650px 590px;
   margin-bottom: 100px;
+  position: relative;
+}
+
+.welcome-section::before{
+  position: absolute;
+  content: "";
+  background-image: url(../images/mail_image_decoration.svg);
+  top: 15px;
+  left: 25px;
+  width: 68px;
+  height: 74px;
 }
 
 .welcome-main-wrapper{
@@ -146,6 +157,18 @@ letter-spacing: 3.2px;
   line-height: 88px;
   letter-spacing: 3.2px;
   margin-right: 25px;
+  display: block;
+  position: relative;
+}
+
+.welcome-text-2::after{
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  background-image: url(../images/decoration_line_under_text.svg);
+  width: 160px;
+  height: 104px;
 }
 
 .welcome-text-3 {
@@ -179,7 +202,10 @@ margin-bottom: 16px;
   background-color: darkgray;
   grid-column: 1 / 1;
   grid-row: 1 /1 ;
+  
 }
+
+
 
 .welcome-icons-social {
   list-style-type: none;
@@ -314,6 +340,26 @@ margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
+.author-decoration{
+  border-radius: 400px;
+  background: #118DA8;
+  width: 112px;
+  height: 112px;
+  position: relative;
+
+}
+
+.author-decoration::before{
+  position: absolute;
+content: "";
+top: 35px;
+left: 20px;
+background-image: url(../images/arrow.png);
+width: 71px;
+height: 38px;
+background-repeat: no-repeat;
+}
+
 
 
 .author-intro{
@@ -323,8 +369,18 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 27px; 
-padding-top: 132px;
+padding-top: 20px;
+display: block;
+
 }
+
+
+
+
+
+
+
+
 
 .author-title{
   color: #FFF;
@@ -366,6 +422,18 @@ gap: 76px;
 margin-right: 50px;
 margin-left: 50px;
 margin-bottom: 100px;
+position: relative;
+}
+
+.subscribe::after{
+position: absolute;
+content: "";
+bottom: -33px;
+left: -34px;
+background-image: url(../images/subscribe_decoration.svg);
+width: 147px;
+height: 91px;
+
 }
 
 .subscribe-wrapper {
@@ -451,6 +519,23 @@ font-style: normal;
 font-weight: 400;
 line-height: 43.2px; 
 margin-bottom: 19px;
+position: relative;
+}
+
+.reviews-text::before{
+  position: absolute;
+  content: "";
+  top: -35px;
+  bottom: 0;
+  background-image: url(../images/star.svg);
+  width: 18px;
+  height: 17px;
+  background-repeat: space;
+  margin-right: 5px;
+}
+
+.reviews-text-5-stars::before{
+  width: 106px;
 }
 
 .reviews-author {
